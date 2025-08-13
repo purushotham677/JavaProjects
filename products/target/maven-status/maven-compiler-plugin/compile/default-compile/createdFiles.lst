@@ -1,0 +1,5 @@
+com\hcltech\Products\ProductsApplication.class
+com\hcltech\Products\controller\TelevisionController.class
+com\hcltech\Products\repository\TelevisionRepository.class
+com\hcltech\Products\dto\TelevisionDto.class
+com\hcltech\Products\entity\Television.class
