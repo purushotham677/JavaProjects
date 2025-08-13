@@ -1,0 +1,60 @@
+package com.hcltech.course_Academy_Service.model;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Student")
+public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String name;
+    private String accountStatus;
+    private  String email;
+
+    public Student(Integer id, String name, String accountStatus, String email) {
+        this.id = id;
+        this.name = name;
+        this.accountStatus = accountStatus;
+        this.email = email;
+    }
+    public Student(){
+
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAccountStatus() {
+        return accountStatus;
+    }
+
+    public void setAccountStatus(String accountStatus) {
+        this.accountStatus = accountStatus;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String toString(){
+        return String.format("Student[id=%s,name=%s,accountStatus=%s,email=%s]",id,name,accountStatus,email);
+    }
+}
